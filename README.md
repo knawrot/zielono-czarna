@@ -4,8 +4,9 @@ Poniższe repozytorum sluży pracom prowadzonym nad aktualizacja strony zielono-
 * **CMS** - Wordpress
 * **Frontend Frameworks** - Bootstrap, Video.js, Colorful Circular Clock, ...
 
-## Aktualny etap prac
-TWORZENIE SZATY GRAFICZNEJ [...]
-INTEGRACJA Z CMS
-FUNKCJONALNOSCI BLOGA
-TESTY
+### Etap prac
+* TWORZENIE SZATY GRAFICZNEJ [...TRWA...]
+* INTEGRACJA Z CMS
+* FUNKCJONALNOSCI BLOGA
+* TESTY
+* DEPLOY
