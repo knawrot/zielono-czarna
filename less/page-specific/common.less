@@ -1,0 +1,178 @@
+/* for the proper backgrounds scaling purposes */
+html, body {
+    height: 100%; 
+}
+
+/* since using relative typography: */
+body { 
+//    font-size: 62.5%; 
+}
+
+/* clear all additional space */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* pointing out the page header even more */
+.page-header {
+    color: @tertiary-theme;
+    font-family: "MyriadPro", Helvetica, Arial, sans-serif;
+    border-bottom: 1px solid lighten(@tertiary-theme, 20%);
+    small {
+        color: lighten(@tertiary-theme, 10%);
+    }
+}
+
+/* classes for centering both horizontally and vertically */
+.center-outer {
+    display: table;
+    height: 100%;
+    width: 100%;   
+}
+.center-inner {
+    display: table-cell;
+    vertical-align: middle;    
+}
+
+/* basic hero unit styling to be overriden on each page */
+.jumbotron {
+    .default-full-bg();  
+    height: 70%;
+    margin-bottom: 0;
+    .container {
+        height: 100%;
+    }
+}
+
+.opening-heading {
+        &>h1, &>p {
+            background-color: rgba(50, 50, 50, 0.6);
+            display: inline;
+        }
+        &>h1 {
+            font-family: "Sansation", Helvetica, Arial, sans-serif;   
+            font-size: 90px;
+            padding: 5px 10px;
+            color: #f4f4f4;
+        }
+        &>p {
+            font-family: "Dosis", Helvetica, Arial, sans-serif;    
+            font-size: 30px;
+            padding: 0 10px;
+            color: #EDEDED;
+        }
+}
+
+/* 100% height (viewport) background */
+.full-height-bg {
+    .default-full-bg();
+    min-height: 100%;
+}
+
+/* helper class to add space between elements with no margin bottom/top (inline-block etc.) */
+.horizontal-divider {
+    height: 50px;
+    background-color: transparent;
+}
+
+.curious-info-panel {
+    .panel();
+    .panel-default();
+    .panel-heading {
+        text-align: right;
+        background-color: #737473;
+        color: white;
+        font-family: "Open Sans";
+        h5 {
+            font-size: 17px;
+            margin: 7px 0;
+        }
+        .fa {
+            margin-left: 5px;
+            font-size: 1.5em;
+        }
+    }
+    .panel-body {
+        color: #737473;
+        background-color: #eee;
+        font-family: Play;
+    }
+}
+
+
+.diagonal-box-top-desc {
+    z-index: 1;
+    position: relative;
+    &:before {
+        position: absolute;
+        content:'';   
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+        -webkit-transform-origin: 100% 0;
+        transform-origin: 100% 0;
+        top: 0;
+        left: -25%;
+        z-index: -1;
+        width: 150%;
+        height: 75%;
+        background: inherit;
+    }
+}
+
+.diagonal-box-top-asc {
+    z-index: 1;
+    position: relative;
+    &:before {
+        position: absolute;
+        content:'';   
+        -webkit-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+        -webkit-transform-origin: 3% 0;
+        transform-origin: 3% 0;
+        top: 0;
+        left: -25%;
+        z-index: -1;
+        width: 150%;
+        height: 75%;
+        background: inherit;
+    }
+}
+
+.diagonal-box-bottom-desc {
+    z-index: 1;
+    position: relative;
+    &:after {
+        position: absolute;
+        content:'';   
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        bottom: 0;
+        left: -25%;
+        z-index: -1;
+        width: 150%;
+        height: 75%;
+        background: inherit;
+    }
+}
+
+.diagonal-box-bottom-asc {
+    z-index: 1;
+    position: relative;
+    &:after {
+        position: absolute;
+        content:'';   
+        -webkit-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+        -webkit-transform-origin: 100% 0;
+        transform-origin: 100% 0;
+        bottom: 0;
+        left: -25%;
+        z-index: -1;
+        width: 150%;
+        height: 75%;
+        background: inherit;
+    }
+}

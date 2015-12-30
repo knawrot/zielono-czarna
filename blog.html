@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- meta section -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="">
+    <!-- TODO: add desc here -->
+    <meta name="author" content="Krzysztof Nawrot">
+
+    <title>Zielono-Czarna.pl</title>
+
+
+    <!-- LESS development compiling -->
+<!--
+    <link rel="stylesheet/less" type="text/css" href="less/styles.less" />
+    <script type="text/javascript">
+        /* Put Less in development mode */
+        less = {};
+        less.env = 'development';
+    </script>
+    <script src="less.min.js"></script>
+-->
+
+
+    <!-- site dependencies -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' type='text/css' href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    
+     <link rel="stylesheet" href="css/styles.css"> 
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+    <link href="css/video-js-customized.css" rel="stylesheet">
+
+
+    <!-- scripts basis -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="//vjs.zencdn.net/4.12/video.js"></script>
+
+</head>
+
+<body style="background-color:#E4E4E4">
+    <!-- header and stuff -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="row">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" class="logo" alt="Logo" />
+                </a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Aktualności</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Poznaj nas <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">O nas</a>
+                                </li>
+                                <li><a href="#">Nasza tworczość</a>
+                                </li>
+                                <li><a href="?page=traditions">Tradycje</a>
+                                </li>
+                                <li><a href="#">Osobistości</a>
+                                </li>
+                                <li><a href="#">Opowieści ze szlaku</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="?page=enrollment">Zapisy</a></li>
+                        <li class="active"><a href="#">Blog</a></li>
+                        <li><a href="?page=advices">Strefa pielgrzyma</a></li>
+                        <li><a href="?page=contact">Kontakt</a></li>
+                        <!--                        <li><button type="button" class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-log-in"></span> Zaloguj</button></li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <div class="container-fluid" style="background-color:#dedede; ">
+                <div class="row" style="font-size: 15px;font-family:Play;margin:10px 80px;padding:0;color:#f6f6f6" >
+                    <ul class="list-unstyled list-inline" style="margin-bottom:0">
+                        <li style="margin-left:20px"><a href="#" style="color:#f2f2f2; font-size:19px; font-weight:900;">Duszpasterstwo</a></li>
+                        <li style="margin-left:20px"><a href="#" style="color:#f2f2f2; font-size:19px; font-weight:900;">Kącik pielgrzyma</a></li>
+                        <li style="margin-left:20px"><a href="#" style="color:#f2f2f2; font-size:19px; font-weight:900;">Co głowa przyniesie</a></li>
+                        <li style="margin-left:20px"><a href="#" style="color:#f2f2f2; font-size:19px; font-weight:900;">Poza nurtem</a></li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+    
+    
+    <div class="container" style="font-family:Dosis;">
+        <div class="col-md-8">
+            <div style="background-color:#f2f2f2; padding:0 50px; margin-bottom: 0;">
+                <div class="row" style="padding-top: 10px;">
+                    <ol class="breadcrumb" style="margin:0; background-color:#ebebeb;">
+                      <li><a href="#" style="color:#999">Duszpasterstwo</a></li>
+                      <li><a href="#" style="color:#999">Rozważania na niedzielę</a></li>
+                      <li class="active" style="color:#999">Po owocach ich poznacie</li>
+                    </ol>
+                </div>
+                <div class="row"><h1 style="font-family:Play; font-weight:900; color:#626262;">Po owocach ich poznacie</h1></div>
+                <div class="row">
+                    <ul class="list-unstyled list-inline" style="color: #999999; font-size:12px">
+                        <li><span class="glyphicon glyphicon-user"></span> &nbsp; x. Sławek</li>
+                        <li><span class="glyphicon glyphicon-time"></span> &nbsp; 27/06/2014</li>
+                        <li><span class="glyphicon glyphicon-th-list"></span> &nbsp; Rozważania na niedzielę</li>
+                        <li><span class="glyphicon glyphicon-tags"></span> &nbsp; <a style="color: #999999">parabola</a>, <a style="color: #999999">św. Marek</a></li>
+                    </ul>
+                </div>
+                <div class="row"><img src="img/merged/traditions/szyszki.JPG" style="width:90%" alt=""></div>
+                <div class="row"><h4 style="font-weight:400;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, officia nulla vero sit dolor eius id minus aliquam consequuntur debitis dignissimos enim reiciendis rerum sapiente repudiandae repellat atque sint quaerat.</h4></div>
+                <div class="row" style="font-weight:100;"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, sunt natus maxime vero aliquam tempore voluptatum quibusdam similique, veritatis ab porro quo inventore commodi accusantium ipsa sequi culpa totam! Sequi, odio, voluptate! Labore facere molestias nulla voluptas laudantium, doloribus dolorum animi ipsam fuga quam nostrum, nobis id provident repudiandae fugiat nam consectetur libero consequatur. Maiores debitis reprehenderit atque dicta veritatis quas, quia aut quidem? Perferendis fugiat impedit sit doloribus nam similique reprehenderit unde, dolorum expedita nostrum doloremque, neque quaerat suscipit architecto a commodi accusantium vel nemo ea? Aperiam dolor a sapiente. Excepturi beatae quis ut vel porro modi nihil praesentium, eum facilis deleniti tenetur aliquam quos dolorem consectetur. Deleniti cupiditate, quibusdam tenetur quod, voluptatem doloremque sunt iure inventore, molestias iste, voluptates quas aperiam accusantium magni culpa! Dicta necessitatibus labore, facilis quod explicabo accusamus doloremque veniam totam illo, similique perspiciatis voluptas error ratione voluptatem dolore minima, quia qui deleniti voluptatum tenetur quo commodi. Odio soluta mollitia corrupti error inventore accusantium aspernatur incidunt excepturi, corporis temporibus et! Amet quaerat quos, totam voluptatibus aliquid unde aperiam doloremque magni recusandae earum explicabo mollitia nobis perspiciatis ad voluptatum necessitatibus ipsum, dicta. Hic quia, ipsam. Consectetur laborum quos est deleniti magni possimus error explicabo debitis, aut ducimus dolores dicta ullam eligendi ab officia. Repellendus cumque libero rem ipsam harum odio sequi commodi, unde id, laudantium neque culpa repellat rerum cupiditate temporibus iure. Ratione, deleniti velit pariatur suscipit. Harum consequuntur et dolores culpa obcaecati ipsam unde natus magni dolorem repudiandae, perspiciatis nisi odio officiis rerum in adipisci sed cupiditate quidem vero nostrum. Cumque nostrum sed ratione id nulla deleniti saepe sit incidunt, temporibus, possimus neque blanditiis voluptate accusamus vero magnam consectetur! Repellendus eius eveniet ipsa, temporibus itaque qui quos. Sunt maxime debitis facere cum maiores commodi sequi, quaerat ea sapiente blanditiis totam, laborum aliquid eligendi dolorum quasi eveniet ipsam reiciendis a officia.</p>
+                <p>Aliquam rem maxime vero hic dicta voluptas officia, odio nemo, officiis provident veniam, sed, possimus quo dolore dolor cupiditate cum beatae voluptates harum facere reiciendis tempore soluta quibusdam mollitia praesentium. Tempora quas voluptates, a accusantium provident facere eligendi officiis expedita, ab autem rem sint quod molestias repudiandae quam eaque! Quia harum sit ipsum expedita magnam unde esse quas quae molestiae, cumque, quibusdam blanditiis. Delectus fugit cum natus temporibus ratione consectetur dolorum, reiciendis quidem provident esse voluptatibus omnis assumenda aliquam numquam incidunt recusandae rem laborum ad dolores voluptate optio. Aperiam, consectetur blanditiis maiores consequuntur cumque, eos!</p></div>
+                <div class="row"><h5 style="text-align:right">Szczerzę z serca błogosławię,<br>x. Sławek</h5></div>
+                <div class="horizontal-divider"></div>
+            </div>
+            <div style="background-color:#999; padding: 10px 50px 70px;">
+                <h2 style="font-family:Play; font-weight:900; color:#b4b4b4; padding-bottom:10px; border-bottom: 10px solid; margin-bottom: 50px">Komentarze (1)</h2>
+                <div class="media">
+                    <div class=" col-sm-3">
+                        <img class="media-object img-responsive" style="border: 1px solid #c0c0c0" src="img/admin.jpg" alt="...">
+                    </div>
+                    <div class="media-body col-sm-9" style="color:#cecece">
+                        <h4 class="media-heading" style="border-bottom: 1px solid; padding-bottom: 5px; margin-bottom: 15px">
+                            Krzysiek Nawrot <small style="color:#b9b9b9">pisze...</small>
+                            <span class="pull-right"><small style="color:#b9b9b9"><span class="glyphicon glyphicon-time"></span> &nbsp; 27/06/2014&nbsp;&nbsp;14:45</small>&nbsp;&nbsp;<button class="btn btn-default btn-sm" style="font-size:10px; padding:1px 3px;">Odpowiedz</button></span>
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde optio, atque doloribus et mollitia ut, minima accusantium explicabo ab aperiam autem a! Eos quaerat assumenda distinctio. Vitae dolores, perspiciatis accusamus.</p>
+                    </div>
+                </div>
+                <h3  style="margin: 100px 0 15px; border-bottom: 2px solid; padding-bottom: 5px; color: #b4b4b4; font-family: Play">Dodaj komentarz</h3>
+                <form action="" style="overflow: hidden">
+                    <div class="col-md-5">
+                        <div class="form-group input-group">
+                            <label id="sizing-addon1" class="input-group-addon" style="background-color: #aaa; border: 0; color:#bbb"><span class="glyphicon glyphicon-user"></span></label>
+                            <input class="form-control" placeholder="Imię i nazwisko" aria-describedby="sizing-addon1" style="background-color: #ccc; color:#bbb">
+                        </div>
+                        <div class="form-group input-group">
+                            <label id="sizing-addon1" class="input-group-addon" style="background-color: #aaa; border: 0; color:#bbb;"><span class="glyphicon glyphicon-envelope"></span></label>
+                            <input class="form-control" placeholder="Email" aria-describedby="sizing-addon1" style="background-color: #ccc; color:#bbb">
+                        </div>
+                        <div class="form-group"><button type="submit" class="btn btn-default pull-right" style="margin-top:20px">Wyślij</button></div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="9" style="background-color: #ccc" placeholder="Treść wiadomości..."></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4" style="padding:20px 50px;">
+            <div class="row" style="margin-bottom: 70px;">
+                <div class="media" style="margin-bottom:0; padding:20px; background-color:#cecece; color:#eeeeee">
+                    <img class="media-object img-circle img-responsive" style="border: 7px solid #acacac" src="img/ksiadz_avatar.jpg" alt="...">
+                    <div class="media-body" style="color:#eee;margin-top:5px; text-align:center">
+                        <p style="font-weight:400">Przewodnik pielgrzymki, wieloletni duszpasterz parafii św. Trójcy w Będziny, znakomity kaznodzieja</p>
+                        <ul class="list-unstyled list-inline" style="font-size:18px;">
+                            <li><span style="margin-right:5px" class="glyphicon glyphicon-pencil"></span> 15</li>
+                            <li><span style="margin-right:5px" class="glyphicon glyphicon-heart"></span> 3</li>
+                            <li><span class="glyphicon glyphicon-envelope"></span></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <h2 style="border-bottom:2px solid #acacac; margin-bottom:0; padding:10px; background-color:#cecece; color:#eeeeee">Przeczytaj także...</h2>
+                <ul class="list-unstyled" style="background-color:#d6d6d6; margin-top:0; padding:10px 15px; line-height:25px; font-size:16px;">
+                    <li><a style="color:#acacac;" href="#">Po owocach ich poznacie</a></li>
+                    <li><a style="color:#acacac;" href="#">Warzywa nic wam nie powiedza</a></li>
+                    <li><a style="color:#acacac;" href="#">Kto szuka nie błądzi</a></li>
+                    <li><a style="color:#acacac;" href="#">Bądźcie solą ziemii</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <h2 style="border-bottom:2px solid #acacac; margin-bottom:0; padding:10px; background-color:#cecece; color:#eeeeee">Najnowsze wpisy..</h2>
+                <ul class="list-unstyled" style="background-color:#d6d6d6; color:#acacac; margin-top:0; padding:10px 15px; line-height:25px; font-size:16px;">
+                    <li><a style="color:#acacac;" href="#">Zielonoczarni w Maroko</a></li>
+                    <li><a style="color:#acacac;" href="#">Po owocach ich poznacie</a></li>
+                    <li><a style="color:#acacac;" href="#">Czy warto być wiernym?</a></li>
+                    <li><a style="color:#acacac;" href="#">O nałogach słów kilka</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <h2 style="border-bottom:2px solid #acacac; margin-bottom:0; padding:10px; background-color:#cecece; color:#eeeeee">Kategorie</h2>
+                <ul class="list-group" style="background-color:#d6d6d6; color:#acacac; margin-top:0; line-height:25px; font-size:16px;">
+                    <a href="#" style="color:#eee; background-color:transparent" class="list-group-item">
+                        <span class="badge" style="background-color:#aaa">14</span>
+                        Rozważania na niedzielę
+                    </a>
+                    <a href="#" style="color:#eee; background-color:transparent" class="list-group-item">
+                        <span class="badge" style="background-color:#aaa">3</span>
+                        Z pamiętnika
+                    </a>
+                    <a href="#" style="color:#eee; background-color:transparent" class="list-group-item">
+                        <span class="badge" style="background-color:#aaa">7</span>
+                        Poradniki
+                    </a>
+                    <a href="#" style="color:#eee; background-color:transparent" class="list-group-item">
+                        <span class="badge" style="background-color:#aaa">2</span>
+                        Z Pismem w ręku
+                    </a>
+                    <a href="#" style="color:#eee; background-color:transparent" class="list-group-item">
+                        <span class="badge" style="background-color:#aaa">11</span>
+                        Relacje
+                    </a>
+                </ul>
+            </div>
+            <div class="row">
+                <h2 style="border-bottom:2px solid #acacac; margin-bottom:0; padding:10px; background-color:#cecece; color:#eeeeee">Tagi</h2>
+                <ul class="list-unstyled list-inline" style="background-color:#d6d6d6; color:#acacac; margin:0; padding:10px 15px; line-height:25px; font-size:16px;">
+                    <li><h4><span class="label label-default" style="color:#eee; background-color:#bbb">św.Marek</span></h4></li>
+                    <li><h4><span class="label label-default" style="color:#eee; background-color:#bbb">perykopa</span></h4></li>
+                    <li><h4><span class="label label-default" style="color:#eee; background-color:#bbb">parabola</span></h4></li>
+                    <li><h4><span class="label label-default" style="color:#eee; background-color:#bbb">życie wieczne</span></h4></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="panel panel-default col-sm-4">
+                    <div class="panel-heading">
+                        <h2 class="text-center">Kim jesteśmy?</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div>
+                            <h5>Grupa Sosnowieckiej Pieszej Pielgrzymki na Jasną Gorę</h5>
+                            <p>Jestesmy jedną z kilku grup Sosnowieckiej Pieszej Pielgrzymki na Jasną Gorę, ktora pielgrzymuje w terminie 8-13 sierpnia każdego roku. Mimo, iż wyruszamy z Będzina, lączymy ludzi z miast i powiatow sąsiadujących, takich jak Sosnowiec, Dąbrowa Gornicza, Czeladź, Slawkow, Wojkowice i inne. Nie ma znaczenia skąd pochodzisz - u nas zawsze jest dla Ciebie miejsce.</p>
+                            <p><a href="?page=about" class="pull-right"><span class="glyphicon glyphicon-question-sign"></span> Dowiedz się więcej</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default col-sm-4">
+                    <div class="panel-heading">
+                        <h2 class="text-center">Co o nas mówią?</h2>
+                    </div>
+                    <div class="panel-body">
+<!--
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/J-DhiYtQOxk"></iframe>
+                        </div>
+-->
+                        <img src="img/muzyczni2.JPG" alt="" class="img-responsive">
+                    </div>
+                </div>
+                <div class="panel panel-default col-sm-3">
+                    <div class="panel-heading">
+                        <h2 class="text-center">Gdzie nas znajdziesz?</h2>
+                    </div>
+                    <div class="panel-body">
+                        <address>
+                             <div class="contact-detail row">
+<!--                                 <i class="fa fa-home fa-2x col-sm-1"></i>-->
+                                <span class="fa-stack col-sm-1">
+                                    <i class="fa fa-square fa-stack-2x"></i>
+                                    <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                                </span>
+                                 <ul class="list-unstyled col-sm-11">
+                                         <li>Parafia Świętej Trójcy</li>
+                                         <li>ul. Plebańska 2</li>
+                                         <li>42-500 Będzin</li>                      
+                                 </ul>
+                             </div>
+                             <div class="contact-detail row">
+                                 <i class="fa fa-phone-square fa-2x col-sm-1"></i>
+                                 <ul class="list-unstyled col-sm-11">
+                                         <li>(+48) 733 890 050</li>
+                                 </ul>
+                             </div>
+                             <div class="contact-detail row">
+                                 <i class="fa fa-envelope-square fa-2x col-sm-1"></i>
+                                 <ul class="list-unstyled col-sm-11">
+                                         <li>sekretariat@zielono-czarna.pl</li>
+                                 </ul>
+                             </div>
+                            <div class="contact-detail row">
+                                <i class="fa fa-facebook-square fa-2x col-sm-1"></i>
+                                <ul class="list-unstyled col-sm-11">
+                                         <li>facebook.com/Zielono-Czarna</li>
+                                 </ul>
+                            </div>
+<!--
+                            <div class="contact-detail row">
+                                <i class="fa fa-youtube-square fa-2x col-sm-1"></i>
+                                <ul class="list-unstyled col-sm-11">
+                                         <li>youtube.com/Zielonoczarnapl</li>
+                                 </ul>
+                            </div>
+                            <div class="contact-detail row">
+                                <i class="fa fa-picture-o fa-2x col-sm-1"></i>
+                                <ul class="list-unstyled col-sm-11">
+                                         <li>picassa.com/Zielono-Czarna</li>
+                                 </ul>
+                            </div>
+-->
+                        </address>
+                        <!--
+                        <ul class="list-unstyled">
+                            <li><a href="#">Aktualności</a></li>
+                            <li><a href="#">Galeria</a></li>
+                            <li><a href="#">Zapisy</a></li>
+                            <li><a href="#">Media</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+-->
+                        <!--
+                                              <h1>Przeszukaj stronę</h1>
+                      <form class="form-inline pull-right" role="search">
+                          <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Szukaj...">
+                          </div>
+                          <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+
+                      </form>
+-->
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-ending row-fluid">
+            <h6>&copy;2014 Zielono-Czarna.pl. Kopiowanie lub udostępnianie jakichkolwiek treści (w szczególności zdjęć i filmów) po uprzednim pozwoleniu ich właścicieli lub twórców.</h6>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

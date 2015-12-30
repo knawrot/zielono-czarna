@@ -1,0 +1,174 @@
+// out: ../css/styles.css
+
+
+
+/* path and structure related variables */
+@path-individual-less: "page-specific";
+
+
+
+/* import of all website styles (video-js.les not included) */
+@import "bootstrap/bootstrap.less";
+@import "grid_extension.less";
+@import "@{path-individual-less}/common.less";
+@import "@{path-individual-less}/index.less";
+@import "@{path-individual-less}/about.less";
+@import "@{path-individual-less}/contact.less";
+@import "@{path-individual-less}/enrollment.less";
+@import "@{path-individual-less}/home.less";
+@import "@{path-individual-less}/lajon.less";
+@import "@{path-individual-less}/traditions.less";
+@import "@{path-individual-less}/advices.less";
+
+
+
+/* Bootstrap ovrerriden variables */
+@body-bg:                   #fff;
+@header-color:              #5C5C5C;
+@header-bg:                 #f2f2f2;
+@header-hover-bg:           darken(@header-bg, 8%);
+
+@font-family-base:          Dosis;
+    
+@navbar-height:                            60px;
+@navbar-default-color:                     @header-color;
+@navbar-default-bg:                        @header-bg;
+
+@navbar-default-link-color:                @header-color;
+@navbar-default-link-hover-color:          #adadad;
+@navbar-default-link-hover-bg:             @header-hover-bg;
+@navbar-default-link-active-color:         #676767;
+@navbar-default-link-active-bg:            @header-hover-bg;
+
+
+@dropdown-bg:                    @header-bg;
+@dropdown-link-color:            @header-color;
+@dropdown-link-hover-color:      @header-color;
+@dropdown-link-hover-bg:         @header-hover-bg;
+
+@panel-bg:                       rgba(255,255,255,.65);
+@panel-default-heading-bg:       transparent;
+
+@thumbnail-bg:                   rgba(255,255,255,.50);
+
+@btn-default-color:              #696969;
+@btn-default-bg:                 #d9d9d9;
+@btn-default-border:             transparent; 
+    
+@primary-theme:             rgb(204, 204, 204);
+@secondary-theme:           #dbdbdb;
+@tertiary-theme:            #676767;
+
+
+
+/* fonts used on website (not including Google Fonts - see head section) */
+@font-face {
+    font-family: "Steelfish";
+    src: url("../fonts/steelfish/steelfish_rg.ttf");
+}
+
+//@font-face {
+//  font-family: "MyriadPro";
+//  src: url("../fonts/myriad-pro/MYRIADPRO-REGULAR.woff") format('woff');
+//}
+
+@font-face {
+  font-family: "Sansation";
+  src: url('../fonts/sansation/Sansation-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Dosis";
+    src: url('../fonts/dosis/Dosis-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: "Dosis";
+    src: url('../fonts/dosis/Dosis-Bold.otf') format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Dosis";
+    src: url('../fonts/dosis/Dosis-ExtraLight.otf') format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+  font-family: "LubalinGraphBold";
+  src: url('../fonts/Lubalin Graph Bold/Lubalin Graph Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Play";
+  src: url('../fonts/play/Play-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Play";
+    src: url('../fonts/play/Play-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+
+
+/* simple mixin for nice container-filling background */
+.default-full-bg {
+    background-color: #d3d3d3;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.video-container(@space-top, @space-bottom, @bg-color, @text-color,
+                @description-width, @video-width: auto) {
+    .video-container {
+        margin-top: @space-top;    
+        margin-bottom: @space-bottom;
+        text-align: center;
+        font-size: 0;    //for no extra space in 'inline-block'
+        .video-wrapper {
+            display: inline-block;
+            border: 8px solid @bg-color; //#bebebe
+            width: @video-width;
+        }
+        .video-description {
+            width: @description-width;
+            display: inline-block;
+            background-color: @bg-color;
+            color: @text-color;    //#F2F2F2
+            vertical-align: top;
+            text-align: left;
+            h3 {
+                font-family: 'Open Sans', 'Arial', sans-serif;
+                font-size: 25px;   //25px
+                font-weight: 400;
+                display: inline-block;
+                margin: 15px 0 10px;
+                padding: 10px 10px 10px 20px;
+                background-color: darken(@bg-color, 20%);
+                border-top-right-radius: 7px;
+                border-bottom-right-radius: 7px;
+            }
+            p {
+                font-family: 'Play', 'Arial', sans-serif;
+                font-size: 16px; //16px
+                margin: 5px 5px 30px 35px;
+            }
+        }
+    }
+}
+.small-video-container(@space-top, @space-bottom, @bg-color, @text-color,
+                    @video-width: auto) {
+     .video-container(@space-top, @space-bottom, @bg-color, @text-color,
+                    30%, @video-width);
+}
+.big-video-container(@space-top, @space-bottom, @bg-color, @text-color,
+                    @video-width: auto) {
+     .video-container(@space-top, @space-bottom, @bg-color, @text-color,
+                    20%, @video-width);
+}
