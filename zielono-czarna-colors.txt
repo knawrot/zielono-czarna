@@ -1,0 +1,10 @@
+#3d3d3d
+#156d20
+#278933
+
+stopka:
+#2D2D2D
+#3D4E2D
+#BBBBBB (dolny tekst)
+#61794A (headingi)
+#8A9282 (regular text)

@@ -1,30 +1,56 @@
+#advices-opening {
+    background: url('../img/originals/advices-bg.jpg') no-repeat center 10%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
+    h1 {
+        font: 700 48px Sansation;
+    }
+    p {
+        font: 300 30px Sansation;    
+    }
+    h1, p {
+        background-color: rgba(0, 0, 0, 0.45);    
+    }
+}
+
 #general {
     padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: #F2F2F2;
+    //padding-bottom: 150px;
+    background-image: url('../img/bgs/crafted-paper-bg2.jpg');
     
+}
+
+#escaper {
+    height: 150px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,2d2d2d+100&0.15+26,0.25+53,0.35+89 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,0.15) 0%, rgba(200,200,200,0.15) 26%, rgba(143,143,143,0.25) 53%, rgba(68,68,68,0.35) 89%, rgba(45,45,45,0.35) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0.15) 0%,rgba(200,200,200,0.15) 26%,rgba(143,143,143,0.25) 53%,rgba(68,68,68,0.35) 89%,rgba(45,45,45,0.35) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0.15) 0%,rgba(200,200,200,0.15) 26%,rgba(143,143,143,0.25) 53%,rgba(68,68,68,0.35) 89%,rgba(45,45,45,0.35) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26ffffff', endColorstr='#592d2d2d',GradientType=0 ); /* IE6-9 */
+
 }
 
 
 .advice-description {
     margin-bottom: 50px;
     overflow: hidden;
-    text-align: center;
     h1 {
-        color: #989898;
+        color: #3d3d3d;
         font-family: 'Dosis', serif;
-        font-size: 85px;
-        font-weight: 800;
+        font-size: 70px;
+        font-weight: 700;
         line-height: 1.2;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     .description {
-        color: #989898;
+        color: #3d3d3d;
         font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-        font-size: 18px;
-        font-weight: 800;
-        line-height: 1.8;
-        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.4;
+        background: url(images/Marek.jpg);
     }
 }
 
@@ -32,7 +58,7 @@
     margin-bottom: 50px;
     span {
         display: inline-block;
-        background-color: #D3D3D3;    
+        background-color: #156d20;    
         padding: 5px 20px;
         color: #F2F2F2;
         font-family: 'Dosis', serif;
@@ -40,13 +66,13 @@
         font-weight: 100;
     }
     .content {
-        border-left: 10px solid #D3D3D3;  
-        background-color: #E4E4E4;
+        border-left: 10px solid #156d20;  
+        background-color: #278933;
         padding: 15px;
-        color: #BEBEBE;
+        color: #ffffff;
         text-align: center;
         h6 {
-            font-family: "Sansation", Helvetica, Arial, sans-serif;
+            font-family: Play, Helvetica, Arial, sans-serif;
             font-size: 19px;    
         }
         p {
@@ -54,74 +80,152 @@
             font-size: 15px;    
         }
         img {
-            border: 3px solid #989898;
+            //border: 2px solid #156d20;
+        }
+    }
+}
+
+
+.advice-piece {
+    position: relative;
+    margin-bottom: 20px;
+    img {
+        position: absolute;
+    }
+    .advice-piece-content {
+        color: #ffffff;
+        h2 {
+            font: 700 30px Play;
+            margin-top: 0;
+        }
+        p {
+            font: 400 18px Dosis;
+        }
+    }
+}
+
+.advice-piece-img-left {
+    img {
+        left: 0;
+        transform: translateX(-50%);
+    }
+    .advice-piece-content {
+        background-color: #156d20;
+        padding: 20px 20px 20px 100px;
+        border-bottom-right-radius: 65px;
+        border-top-right-radius: 65px;
+        h2 {
+            text-align: left
+        }
+    }
+}
+
+.advice-piece-img-right {
+    img {
+        right: 0;
+        transform: translateX(50%);
+    }
+    .advice-piece-content {
+        background-color: #278933;
+        padding: 20px 100px 25px 20px;
+        border-bottom-left-radius: 65px;
+        border-top-left-radius: 65px;
+        h2 {
+            text-align: right
         }
     }
 }
 
     
-ol.advices {
-    list-style: none;
-    margin: 0;
-    margin-top: 50px;
-    margin-left: 3em;
-    padding: 0;
-    counter-reset: li-counter;
-    li {
-        position: relative;
-        margin: 0;
-        margin-top: 80px;
-        p.advice {
-            display: inline-block;
-            padding: .9em;
-            margin: 0 20px 40px 0;
-            color: #fff;
-            background-color: #bebebe;
-            font-family: "Play", Verdana, Helvetica, sans-serif;
-            font-size: 16px;
-            font-weight: 800;
-            line-height: 1.8;     
-        }
-        div.extras {
-            .thumbnail {
-                padding: 5px;
-                background-color: #989898;
-                display: inline-block;
-                margin: 0 0 10px 20px;
-                img {
-                    display: inline-block;
-                    max-height: 300px;    
-                }
-                .caption {
-                    padding: 0;
-                    margin: 8px 3px;
-                    color: #F2F2F2;
-                    font-family: "Dosis", Verdana, Helvetica, sans-serif;
-                    text-align: center;
-                    p {
-                        margin: 0;
-                        font-size: 15px;
-                        font-weight: 100;
-                    }
-                }
-            }
-        }
+#advice-czapka {
+    .advice-piece-content {
+        height: 182px;
     }
-    li:before {
-        position: absolute;
-        top: 0;
-        left: -1.0em;
-        width: 1.1em;
-        height: 1.1em;
-        font-size: 3em;
-        font-family: "Lato", Verdana, Helvetica, sans-serif;
-        line-height: 1.1;
-        text-align: center;
-        color: #F2F2F2;
-        background-color: #989898;
-        content: counter(li-counter);
-        counter-increment: li-counter;
+}
+
+#advice-sweter {
+    .advice-piece-content {
+        padding-right: 105px;
     }
+}
+
+#advice-buty {
+    img {
+        top: -20px;
+    }
+    .advice-piece-content {
+        padding-left: 115px;
+    }
+}
+
+#advice-peleryna {
+    img {
+        top: -15px;
+    }
+}
+
+//ol.advices {
+//    list-style: none;
+//    margin: 0;
+//    margin-top: 50px;
+//    margin-left: 3em;
+//    padding: 0;
+//    counter-reset: li-counter;
+//    li {
+//        position: relative;
+//        margin: 0;
+//        margin-top: 80px;
+//        p.advice {
+//            display: inline-block;
+//            padding: .9em;
+//            margin: 0 20px 40px 0;
+//            color: #fff;
+//            background-color: #bebebe;
+//            font-family: "Play", Verdana, Helvetica, sans-serif;
+//            font-size: 16px;
+//            font-weight: 800;
+//            line-height: 1.8;     
+//        }
+//        div.extras {
+//            .thumbnail {
+//                padding: 5px;
+//                background-color: #989898;
+//                display: inline-block;
+//                margin: 0 0 10px 20px;
+//                img {
+//                    display: inline-block;
+//                    max-height: 300px;    
+//                }
+//                .caption {
+//                    padding: 0;
+//                    margin: 8px 3px;
+//                    color: #F2F2F2;
+//                    font-family: "Dosis", Verdana, Helvetica, sans-serif;
+//                    text-align: center;
+//                    p {
+//                        margin: 0;
+//                        font-size: 15px;
+//                        font-weight: 100;
+//                    }
+//                }
+//            }
+//        }
+//    }
+//    li:before {
+//        position: absolute;
+//        top: 0;
+//        left: -1.0em;
+//        width: 1.1em;
+//        height: 1.1em;
+//        font-size: 3em;
+//        font-family: "Lato", Verdana, Helvetica, sans-serif;
+//        line-height: 1.1;
+//        text-align: center;
+//        color: #F2F2F2;
+//        background-color: #989898;
+//        content: counter(li-counter);
+//        counter-increment: li-counter;
+//    }
 //    li:nth-child(even) {
 //        margin-left: 60px; 
 //    }

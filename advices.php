@@ -1,4 +1,4 @@
-<div class="jumbotron">
+<div id="advices-opening" class="jumbotron">
     <div class="container">
         <div class="center-outer">
             <div class="center-inner">
@@ -17,7 +17,7 @@
 <div id="general">
     <div class="container">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-5 col-md-offset-1">
                <div class="advice-description">
                    <h1>Co zabrać?</h1>
                     <p class="description">
@@ -29,13 +29,65 @@
                 <div class="advice-author">
                     <span>Porad udziela...</span>
                     <div class="content">
-                        <img src="img/marek.jpg" alt="marek" class="img-responsive">
+                        <img src="img/Marek.jpg" alt="marek" class="img-responsive">
                         <h6>Marek Lubacha</h6>
                         <p>szef służby porządkowej oraz jeden z najstarszych stażem w naszej grupie</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div id="advice-czapka" class="advice-piece advice-piece-img-left">
+                            <img src="img/czapka.png" class="img-responsive" alt="">
+                            <div class="advice-piece-content">
+                                <h2>NAKRYCIE GŁOWY</h2>
+                                <p>Koniecznie zabierz ze sobą nakrycie głowy (bez znaczenia na to, jak wnim będziesz wyglądał). Ochrona przed nadmiernym nasłonecznieniem to jedna z najważniejszych rzeczy w trakcie pielgrzymowania.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-md-offset-1">
+                        <div id="advice-sweter" class="advice-piece advice-piece-img-right">
+                            <img src="img/sweter.png" class="img-responsive" alt="">
+                            <div class="advice-piece-content">
+                                <h2>SWETER</h2>
+                                <p>Bez znaczenia na temperaturę panującą w ciągu dnia, w nocy zawsze się ochładza. Odczujesz to kładąc się spać, dlatego zawsze miej ze sobą ciepłą bluzę!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-1">
+                        <div id="advice-buty" class="advice-piece advice-piece-img-left">
+                            <img src="img/buty.png" class="img-responsive" alt="">
+                            <div class="advice-piece-content">
+                                <h2>BUTY</h2>
+                                <p>Pełne, wygodne, rozchodzone obuwie to podstawa. Najlepiej zabrać  ze sobą 2 pary na ewnentualną zmianę!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-3">
+                        <div id="advice-peleryna" class="advice-piece advice-piece-img-right">
+                            <img src="img/peleryna.png" class="img-responsive" alt="">
+                            <div class="advice-piece-content">
+                                <h2>PELERYNA</h2>
+                                <p>Nawet w najbardziej upalne, słoneczne dni deszcz może pojawić się zupełnie bez uprzedzenia, dlatego warto zawsze ze sobą mieć coś przeciwdeszczowego.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <div id="escaper"></div>
+</div>
+
+
+<!--
                     <ol class="advices">
                         <li class="row">
                             <div class="col-md-8">
@@ -116,7 +168,4 @@
                             </div>
                         </li>
                     </ol>
-            </div>
-        </div>
-    </div>
-</div>
+-->

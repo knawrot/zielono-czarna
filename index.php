@@ -55,7 +55,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">
-                    <img src="img/logo.png" class="logo" alt="Logo" />
+                    <img src="img/logo2.png" class="logo" alt="Logo" />
                 </a>
             </div>
 
@@ -134,15 +134,13 @@
                 </div>
                 <div class="panel panel-default col-sm-4">
                     <div class="panel-heading">
-                        <h2 class="text-center">Jak wyglądamy?</h2>
+                        <h2 class="text-center">Co o nas mówią?</h2>
                     </div>
                     <div class="panel-body">
-<!--
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/J-DhiYtQOxk"></iframe>
                         </div>
--->
-                        <img src="img/grupowe_bledow.JPG" alt="" class="img-responsive">
+<!--                        <img src="img/grupowe_bledow.JPG" alt="" class="img-responsive">-->
                     </div>
                 </div>
                 <div class="panel panel-default col-sm-3">
@@ -222,7 +220,7 @@
             </div>
         </div>
         <div class="footer-ending row-fluid">
-            <h6>&copy;2014 Zielono-Czarna.pl. Kopiowanie lub udostępnianie jakichkolwiek treści (w szczególności zdjęć i filmów) po uprzednim pozwoleniu ich właścicieli lub twórców.</h6>
+            <h6>&copy;2016 Zielono-Czarna.pl. Kopiowanie lub udostępnianie jakichkolwiek treści (w szczególności zdjęć i filmów) po uprzednim pozwoleniu ich właścicieli lub twórców.</h6>
         </div>
     </footer>
 
