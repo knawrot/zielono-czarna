@@ -33,13 +33,13 @@
      <link rel="stylesheet" href="css/styles.css"> 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
-    <link href="css/video-js-customized.css" rel="stylesheet">
+    <link href="http://vjs.zencdn.net/5.10.2/video-js.css" rel="stylesheet">
+    <link href="css/about/video-styles.css" rel="stylesheet">
 
 
     <!-- scripts basis -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="//vjs.zencdn.net/4.12/video.js"></script>
 
 </head>
 
@@ -79,8 +79,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li <?php if(!empty($_GET[ 'page']) && strcmp(basename($_GET[ 'page']), "?")==0 ){?>class="active"
-                        <?php } ?>><a href="#">Galeria</a>
+                    <li <?php if(!empty($_GET[ 'page']) && strcmp(basename($_GET[ 'page']), "gallery")==0 ){?>class="active"
+                        <?php } ?>><a href="?page=gallery">Galeria</a>
                     </li>
                     <li <?php if(!empty($_GET[ 'page']) && strcmp(basename($_GET[ 'page']), "enrollment")==0 ){?>class="active"
                         <?php } ?>><a href="?page=enrollment">Zapisy</a>
@@ -119,35 +119,30 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="panel panel-default col-sm-4">
-                    <div class="panel-heading">
-                        <h2 class="text-center">Kim jesteśmy?</h2>
-                    </div>
-                    <div class="panel-body">
-                        <div>
+                <div class="col-sm-4">
+
+                        <div class="text-group">
                             <h5>Grupa Sosnowieckiej Pieszej Pielgrzymki na Jasną Gorę</h5>
                             <p>Jestesmy jedną z kilku grup Sosnowieckiej Pieszej Pielgrzymki na Jasną Gorę, ktora pielgrzymuje w terminie 8-13 sierpnia każdego roku. Mimo, iż wyruszamy z Będzina, lączymy ludzi z miast i powiatow sąsiadujących, takich jak Sosnowiec, Dąbrowa Gornicza, Czeladź, Slawkow, Wojkowice i inne. Nie ma znaczenia skąd pochodzisz - u nas zawsze jest dla Ciebie miejsce.</p>
                             <p><a href="#" class="pull-right"><span class="glyphicon glyphicon-question-sign"></span> Dowiedz się więcej</a>
                             </p>
                         </div>
-                    </div>
                 </div>
-                <div class="panel panel-default col-sm-4">
+                <div class="col-sm-4">
+<!--
                     <div class="panel-heading">
                         <h2 class="text-center">Co o nas mówią?</h2>
                     </div>
-                    <div class="panel-body">
+-->
+
+<!--
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/J-DhiYtQOxk"></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/H-gsluUQmmQ"></iframe>
                         </div>
+-->
 <!--                        <img src="img/grupowe_bledow.JPG" alt="" class="img-responsive">-->
-                    </div>
                 </div>
-                <div class="panel panel-default col-sm-3">
-                    <div class="panel-heading">
-                        <h2 class="text-center">Gdzie nas znajdziesz?</h2>
-                    </div>
-                    <div class="panel-body">
+                <div class="col-sm-3">
                         <address>
                              <div class="contact-detail row">
 <!--                                 <i class="fa fa-home fa-2x col-sm-1"></i>-->
@@ -179,20 +174,6 @@
                                          <li>facebook.com/Zielono-Czarna</li>
                                  </ul>
                             </div>
-<!--
-                            <div class="contact-detail row">
-                                <i class="fa fa-youtube-square fa-2x col-sm-1"></i>
-                                <ul class="list-unstyled col-sm-11">
-                                         <li>youtube.com/Zielonoczarnapl</li>
-                                 </ul>
-                            </div>
-                            <div class="contact-detail row">
-                                <i class="fa fa-picture-o fa-2x col-sm-1"></i>
-                                <ul class="list-unstyled col-sm-11">
-                                         <li>picassa.com/Zielono-Czarna</li>
-                                 </ul>
-                            </div>
--->
                         </address>
                         <!--
                         <ul class="list-unstyled">
@@ -213,7 +194,6 @@
 
                       </form>
 -->
-                    </div>
 
 
                 </div>

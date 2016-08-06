@@ -12,7 +12,7 @@
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="page-header">Napisz do nas<br>
+                            <h1 class="page-header">Napisz do nas
                                     <small>Odpiszemy. Może jeszcze w tym roku.</small>
                                 </h1>
                         </div>
@@ -165,46 +165,39 @@
         };
 
         var styles = [{
-            stylers: [{
-                saturation: -100
-            }, {
-                lightness: -7
-            }]
+            stylers: [
+                {color: '#7c867e'}
+            ]
         }, {
             featureType: "water",
             elementType: "geometry",
-            stylers: [{
-                hue: "#e3e3e3"
-            }, {
-                lightness: 30
-            }, {
-                saturation: -60
-            }]
+            stylers: [
+                {color: "#b9b9b9"}
+            ]
         }, {
             featureType: "water",
             elementType: "labels",
             stylers: [{
-                lightness: -60
+                lightness: -50
             }]
         }, {
             featureType: "road",
             elementType: "geometry",
+            stylers: [
+                {color: "#335838"}, 
+                {visibility: "simplified"}
+            ]
+        }, {
+            featureType: "road",
+            elementType: "labels",
             stylers: [{
-                color: "#3e3e3e"
-            }, {
-                visibility: "simplified"
+                lightness: 60
             }]
         }, {
             featureType: "road.local",
             elementType: "labels",
             stylers: [{
                 visibility: "off"
-            }]
-        }, {
-            featureType: "road",
-            elementType: "labels.text.fill",
-            stylers: [{
-                color: "#ebebeb"
             }]
         }, {
             featureType: "road",
@@ -225,23 +218,23 @@
                 visibility: "off"
             }]
         }, {
-            featureType: "poi",
+            featureType: "landscape.man_made",
             elementType: "geometry",
-            stylers: [{
-                saturation: -50
-            }]
-        }, {
-            featureType: "landscape",
-            elementType: "geometry",
-            stylers: [{
-                saturation: -50
-            }]
+            stylers: [
+                {color: "#919191"}
+            ]
         }, {
             featureType: "administrative",
             elementType: "labels.text.fill",
-            stylers: [{
-                color: "#fefefe"
-            }]
+            stylers: [
+                {color: "#eaeaea"}
+            ]
+        }, {
+            featureType: "transit",
+            elementType: "all",
+            stylers: [
+                { "visibility": "off" }
+            ]
         }];
 
         var var_marker = new google.maps.Marker({

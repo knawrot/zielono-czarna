@@ -1,46 +1,52 @@
-<div id="about-opening" class="jumbotron">
-    <div class="container">
-        <div class="center-outer">
-            <div class="center-inner">
-                <div class="opening-heading center-block">
-                <h1>O nas</h1><br><br>
-                <p>Poznaj grupę, która ma swój unikalny klimat!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="horizontal-divider"></div>
-<div class="container about-paragraph">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1>Kilka słów o nas</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <p>Nie ma znaczenia z jakiego jesteś miasta. Nie ma także znaczenia, z jakiej jesteś diecezji. Ostatecznie nie ma nawet znaczenia, z jakiego jesteś kraju lub jakiej jesteś narodowości. Podróżują z nami ludzie z Sosnowca, Dąbrowy Gorniczej, Czeladzi, Siewierza, Wojkowic, Katowic, Krakowa, Warszawy, czy nawet Ukrainy i Kazachstanu. Dlatego bez względu na lokalizację, zawsze czuj się zaproszony!</p>
-                </div>
-                <div class="col-md-5 col-md-offset-1">
-                    <div class="curious-info-panel">
-                        <div class="panel-heading"><h5>Co wyróżnia <i>Sosnowiecką Pielgrzymkę</i><i class="fa fa-question"></i></h5></div>
-                        <div class="panel-body">W odróżnieniu od Pielgrzymki Zagłębiowskiej, wyruszjącej w dniach 23-26 sierpnia, dominują tu ludzie młodzi i pełni energii, o czym każdy, kto miał okazję w tym terminie pielgrzymować, już się przekonał. Szalone pomysły łączą się tu z charakterem modlitewnym i dlatego być może warto spróbować.</div>
+<div class="about-fixed-background">
+    <div class="container about-paragraph">
+        <div class="row">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Kilka słów o nas</h1>
+                        <p>Nie ma znaczenia z jakiego jesteś miasta. Nie ma także znaczenia, z jakiej jesteś diecezji. Ostatecznie nie ma nawet znaczenia, z jakiego jesteś kraju lub jakiej jesteś narodowości. Podróżują z nami ludzie z Sosnowca, Dąbrowy Gorniczej, Czeladzi, Siewierza, Wojkowic, Katowic, Krakowa, Warszawy, czy nawet Ukrainy i Kazachstanu. Dlatego bez względu na lokalizację, zawsze czuj się zaproszony!</p>                        
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/about/grupa-bw.jpg" alt="" class="img-responsive left">
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <img src="img/mapka+uczestniczace.png" alt="" class="img-responsive">
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1">
+                <div class="curious-info-panel">
+                            <div class="panel-heading"><h5>Co wyróżnia <br/><i>Sosnowiecką Pielgrzymkę</i><i class="fa fa-question"></i></h5></div>
+                            <div class="panel-body">W odróżnieniu od Pielgrzymki Zagłębiowskiej, wyruszjącej w dniach 23-26 sierpnia, dominują tu ludzie młodzi i pełni energii, o czym każdy, kto miał okazję w tym terminie pielgrzymować, już się przekonał. Szalone pomysły łączą się tu z charakterem modlitewnym i dlatego być może warto spróbować.</div>
                 </div>
+            </div>
+            <div class="col-md-6">
+                <img src="img/about/church-bw.jpg" alt="" class="img-responsive right">
+            </div>
+<!--
+            <div class="col-md-2">
+                <div class="curious-info-panel">
+                            <div class="panel-heading"><h5>Co wyróżnia <br/><i>Sosnowiecką Pielgrzymkę</i><i class="fa fa-question"></i></h5></div>
+                            <div class="panel-body">W odróżnieniu od Pielgrzymki Zagłębiowskiej, wyruszjącej w dniach 23-26 sierpnia, dominują tu ludzie młodzi i pełni energii, o czym każdy, kto miał okazję w tym terminie pielgrzymować, już się przekonał. Szalone pomysły łączą się tu z charakterem modlitewnym i dlatego być może warto spróbować.</div>
+                </div>
+            </div>
+-->
+        </div>
+    </div>
+    
+    <div id="about-opening" class="jumbotron">
+        <div class="container">
+            <div class="col-md-10 col-md-offset-1">
+                <h2 id="video-title">Czemu <b>Zielono-Czarna?</b></h2>
+                <video id="video-promo" class="video-js vjs-default-skin"                                      controls
+                             preload="none" 
+                             width="890px" height="509px"
+                             poster="img/bgs/okladka3.jpg"
+                             data-setup="{}">
+                             <source src="video/promo.mp4" type='video/mp4'>
+                                <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                </video>
             </div>
         </div>
     </div>
-</div>
-
-<div class="horizontal-divider"></div>
 
 <!--
 <div class="horizontal-divider"></div>
@@ -62,26 +68,26 @@
             </div>
             <div class="row">
                 <div class="col-md-3">
-                   <img src="img/ksiadz_avatar.jpg" alt="" class="img-responsive img-circle center-block">
+                   <img src="img/about/person-xslawek.jpg" alt="" class="img-responsive img-circle center-block">
                     <h5 class="small-title">Przewodnik grupy</h5>
                 </div>
                 <div class="col-md-3">
-                   <img src="img/pisarczyk-bw.jpg" alt="" class="img-responsive img-circle center-block">
+                   <img src="img/about/person-xpiotr.jpg" alt="" class="img-responsive img-circle center-block">
                     <h5 class="small-title">Animator tańców</h5>
                 </div>
                 <div class="col-md-3">
-                   <img src="img/marek-square.jpg" alt="" class="img-responsive img-circle center-block">
+                   <img src="img/about/person-marek.jpg" alt="" class="img-responsive img-circle center-block">
                     <h5 class="small-title">Szef służby porządkowej</h5>
                 </div>
                 <div class="col-md-3">
-                   <img src="img/admin-square.jpg" alt="" class="img-responsive img-circle center-block">
+                   <img src="img/about/person-krzysztof.jpg" alt="" class="img-responsive img-circle center-block">
                     <h5 class="small-title">Animator muzyczny</h5>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+</div>
 <div id="summarison">
     <div class="diagonal-box-top-asc">
         <div class="container">
@@ -130,7 +136,7 @@
     </div>
     <div id="music" class="gallery container-fluid">
         <div class="row">
-            <div><img src="img/muzyczni1.jpg" alt=""></div>
+            <div><img src="img/about/muzyczni1.jpg" alt=""></div>
             <div>
                 <div class="center-outer">
                     <div class="center-inner">
@@ -138,10 +144,10 @@
                     </div>
                 </div>
             </div>
-            <div><img src="img/muzyczni2.JPG" alt=""></div>
-            <div><img src="img/muzyczni3.jpg" alt=""></div>
-            <div><img src="img/muzyczni4.jpg" alt=""></div>
-            <div><img src="img/muzyczni5.jpg" alt=""></div>
+            <div><img src="img/about/muzyczni2.JPG" alt=""></div>
+            <div><img src="img/about/muzyczni3.jpg" alt=""></div>
+            <div><img src="img/about/muzyczni4.jpg" alt=""></div>
+            <div><img src="img/about/muzyczni5.jpg" alt=""></div>
         </div>
     </div>
     <div id="dances" class="gallery container-fluid">
@@ -177,7 +183,7 @@
         </div>
     </div>
 </div>
-
+<script src="http://vjs.zencdn.net/5.10.2/video.js"></script>
 <!--
 <div id="history" class="container-fluid about-paragraph">
     <div class="row">
